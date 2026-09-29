@@ -1,0 +1,116 @@
+1 : recibir_materiales : 500 :
+2 : preparar_herramientas : 700 :
+3 : revisar_inventario : 400 :
+4 : preparar_mesa_trabajo : 600 :
+5 : verificar_seguridad : 300 :
+6 : organizar_materiales : 800 : 1,3
+7 : organizar_herramientas : 600 : 2,4
+8 : preparar_area_cocina : 900 : 4,5
+9 : preparar_area_ensamble : 700 : 4,5
+10 : clasificar_materiales : 500 : 6
+11 : clasificar_herramientas : 500 : 7
+12 : comprobar_materiales : 700 : 6,10
+13 : comprobar_herramientas : 700 : 7,11
+14 : preparar_componentes_A : 800 : 10,12
+15 : preparar_componentes_B : 900 : 10,12
+16 : preparar_componentes_C : 700 : 11,13
+17 : preparar_componentes_D : 600 : 11,13
+18 : preparar_superficie_A : 500 : 8
+19 : preparar_superficie_B : 600 : 8
+20 : preparar_superficie_C : 500 : 8
+21 : preparar_superficie_D : 700 : 8
+
+22 : ensamblar_modulo_A1 : 800 : 14,18
+23 : ensamblar_modulo_A2 : 700 : 14,19
+24 : ensamblar_modulo_B1 : 900 : 15,20
+25 : ensamblar_modulo_B2 : 800 : 15,21
+26 : ensamblar_modulo_C1 : 700 : 16,18
+27 : ensamblar_modulo_C2 : 900 : 16,19
+28 : ensamblar_modulo_D1 : 600 : 17,20
+29 : ensamblar_modulo_D2 : 800 : 17,21
+
+30 : revisar_modulo_A1 : 400 : 22
+31 : revisar_modulo_A2 : 400 : 23
+32 : revisar_modulo_B1 : 500 : 24
+33 : revisar_modulo_B2 : 500 : 25
+34 : revisar_modulo_C1 : 400 : 26
+35 : revisar_modulo_C2 : 400 : 27
+36 : revisar_modulo_D1 : 500 : 28
+37 : revisar_modulo_D2 : 500 : 29
+
+38 : ajustar_modulo_A1 : 600 : 30
+39 : ajustar_modulo_A2 : 600 : 31
+40 : ajustar_modulo_B1 : 700 : 32
+41 : ajustar_modulo_B2 : 700 : 33
+42 : ajustar_modulo_C1 : 600 : 34
+43 : ajustar_modulo_C2 : 600 : 35
+44 : ajustar_modulo_D1 : 700 : 36
+45 : ajustar_modulo_D2 : 700 : 37
+
+46 : verificar_A1 : 500 : 38
+47 : verificar_A2 : 500 : 39
+48 : verificar_B1 : 600 : 40
+49 : verificar_B2 : 600 : 41
+50 : verificar_C1 : 500 : 42
+51 : verificar_C2 : 500 : 43
+52 : verificar_D1 : 600 : 44
+53 : verificar_D2 : 600 : 45
+
+54 : preparar_ensamble_A : 800 : 46,47
+55 : preparar_ensamble_B : 900 : 48,49
+56 : preparar_ensamble_C : 800 : 50,51
+57 : preparar_ensamble_D : 900 : 52,53
+
+58 : ensamblar_A : 1000 : 54
+59 : ensamblar_B : 1100 : 55
+60 : ensamblar_C : 1000 : 56
+61 : ensamblar_D : 1100 : 57
+
+62 : revisar_ensamble_A : 700 : 58
+63 : revisar_ensamble_B : 700 : 59
+64 : revisar_ensamble_C : 700 : 60
+65 : revisar_ensamble_D : 700 : 61
+
+66 : corregir_ensamble_A : 600 : 62
+67 : corregir_ensamble_B : 600 : 63
+68 : corregir_ensamble_C : 600 : 64
+69 : corregir_ensamble_D : 600 : 65
+
+70 : prueba_A : 900 : 66
+71 : prueba_B : 900 : 67
+72 : prueba_C : 900 : 68
+73 : prueba_D : 900 : 69
+
+74 : validar_A : 700 : 70
+75 : validar_B : 700 : 71
+76 : validar_C : 700 : 72
+77 : validar_D : 700 : 73
+
+78 : integrar_A_B : 1000 : 74,75
+79 : integrar_C_D : 1000 : 76,77
+
+80 : revisar_integracion_AB : 800 : 78
+81 : revisar_integracion_CD : 800 : 79
+
+82 : preparar_integracion_final : 900 : 80,81
+83 : ejecutar_prueba_integracion : 1200 : 82
+84 : analizar_resultados : 900 : 83
+85 : corregir_resultados : 1000 : 84
+
+86 : segunda_prueba_integracion : 1200 : 85
+87 : validar_resultados_finales : 900 : 86
+
+88 : preparar_entrega_A : 700 : 87
+89 : preparar_entrega_B : 700 : 87
+90 : preparar_entrega_C : 700 : 87
+91 : preparar_entrega_D : 700 : 87
+
+92 : consolidar_documentacion : 1000 : 88,89,90,91
+93 : revisar_documentacion : 800 : 92
+94 : preparar_paquete_final : 900 : 93
+95 : verificacion_final_A : 600 : 94
+96 : verificacion_final_B : 600 : 94
+97 : verificacion_final_C : 600 : 94
+98 : verificacion_final_D : 600 : 94
+99 : aprobacion_final : 1000 : 95,96,97,98
+100 : finalizar_proceso : 500 : 99
