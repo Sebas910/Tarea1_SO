@@ -17,6 +17,8 @@ _Tarea 1 · Sistemas Operativos · Universidad Diego Portales_
 
 ## 📖 Descripción
 
+Autores: Sebastian Quintero Y Alan Troncoso
+
 El señor Loyola celebrará las Fiestas Patrias **la semana completa** y, como buen organizado, planifica la ramada como un sistema: cada día es un **DAG de actividades** con duraciones y dependencias.
 
 Este programa lee ese plan (`plan.txt`), lanza cada actividad como un **proceso hijo independiente** en cuanto sus dependencias terminan, respeta un **límite de concurrencia K**, propaga mensajes entre actividades mediante **pipes**, aísla los fallos y reacciona a la **inspección de la Seremi (Ctrl+C)** abortándolo todo.
