@@ -6,9 +6,9 @@
 #include <string.h>
 
 void abort_branch(Task tasks[], int total_tasks, const char* failed_id, int* aborted_count) {
-    for (int i = 0; i < total_tasks; i++) {
-        for (int d = 0; d < tasks[i].num_deps; d++) {
-            if (strcmp(tasks[i].deps[d], failed_id) == 0) {
+    for (int i = 0; i < total_tasks; i++) { //recorrer todas las tareas 
+        for (int d = 0; d < tasks[i].num_deps; d++) { // recorrer las dependencias
+            if (strcmp(tasks[i].deps[d], failed_id) == 0) { //tarea i dependia del fallo?
                 if (tasks[i].status == WAITING) {
                     tasks[i].status = ABORTED;
                     (*aborted_count)++;
@@ -55,6 +55,7 @@ int parse_plan(const char* filename, Task* tasks, int* total_tasks) { //Funcion 
 
         if (*trim(line) == '\0') continue; // linea en blanco (trim tambien limpia \r de archivos de Windows, \n)
 
+        //se busca el siguiente carácter ':' asi separando el plan.txt en 4 segmentos, id, nombre, tiempo y dependencias
         char *id_str = line;
         char *name_str = strchr(id_str, ':');
         if (!name_str) { fprintf(stderr, "Aviso: linea %d mal formada, se ignora.\n", lineno); continue; }
