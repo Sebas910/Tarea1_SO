@@ -10,3 +10,10 @@
 //Incluyendo los archivos con las funciones programadas en los otros archivos .c
 #include "tipos.h"
 #include "dag.h"
+
+volatile sig_atomic_t seremi_llegada = 0;
+
+void handle_sigint(int sig) {
+    (void)sig;
+    seremi_llegada = 1;
+}
