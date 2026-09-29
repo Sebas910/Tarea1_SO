@@ -21,6 +21,11 @@ typedef struct {
     int deps_met;
     Status status;
     pid_t pid;
+
+    int rfd;              // extremo de lectura del pipe propio de este hijo (solo valido en RUNNING)
+    char out_msg[256];    // mensaje que esta actividad emitio al terminar (recibido por el pipe)
+    int src[MAX_DEPS];    // indices de las actividades cuyos insumos ya llegaron a esta tarea
+    int num_src;
 } Task;
 
 // Estructura para el paso de mensajes por Pipe
